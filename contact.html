@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacter Nous - Pixentry Creatives</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <span><img src="assets/image/pixentry logo (trensparent).png" width="150" alt="Logo"></span>
+                </a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">À propos de nous</a></li>
+                <li><a href="contact.html" class="active btn btn-outline">Contacter Nous</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contacter Nous</h1>
+            <p>Discutons de votre projet</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h2>Entrer en contact</h2>
+                    <p>Nous sommes là pour répondre à toutes vos questions concernant nos services. Contactez-nous, nous vous répondrons dans les plus brefs délais.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Envoyez-nous un email</h3>
+                                <p><a href="mailto:contact@pixentrycreatives.com">contact@pixentrycreatives.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>WhatsApp</h3>
+                                <p><a href="https://wa.me/261345678901" target="_blank">+261 32 420 2242</a></p>
+                                <p class="hint">Available 9AM-6PM (GMT+3)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="method-details">
+                                <h3>Location</h3>
+                                <p>Vohemar, Madagascar</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h3>Connectez-vous avec nous</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container reveal-right">
+                    <form id="contactForm" class="contact-form">
+                        <h2>Envoyez-nous un message</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Votre nom*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Votre email*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Numéro de téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" selected disabled>Sélectionnez un sujet</option>
+                                <option value="quote">Demander un devis</option>
+                                <option value="info">Informations générales</option>
+                                <option value="support">Assistance</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Votre message*</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">J’accepte le traitement de mes données personnelles afin de recevoir une réponse à ma demande.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Questions fréquentes</h2>
+                <p>Trouvez les réponses aux questions courantes concernant nos services.</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item reveal-up">
+                    <div class="faq-question">
+                        <h3>Combien de temps faut-il pour réaliser un projet de design ?</h3>
+                        <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Les délais de réalisation varient en fonction de la complexité et de l’ampleur du projet. Un design simple peut prendre 2 à 3 jours, tandis qu’une identité de marque complète peut nécessiter 2 à 3 semaines. Nous vous fournirons un calendrier précis lors de notre première consultation.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal-up" data-delay="100">
+                    <div class="faq-question">
+                        <h3>Quelle est votre politique de révision ?</h3>
+                        <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nos forfaits standard incluent deux séries de révisions. Des révisions supplémentaires peuvent être organisées moyennant un tarif horaire. Nous travaillons en étroite collaboration avec vous tout au long du processus pour garantir votre satisfaction avec le résultat final.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal-up" data-delay="200">
+                    <div class="faq-question">
+                        <h3>Comment puis-je demander un devis pour mon projet ?</h3>
+                        <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Vous pouvez demander un devis en remplissant notre formulaire de contact, en nous envoyant un email ou en nous contactant via WhatsApp. Veuillez fournir le plus de détails possible sur les besoins de votre projet afin de recevoir un devis précis.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal-up" data-delay="300">
+                    <div class="faq-question">
+                        <h3>Travaillez-vous avec des clients en dehors de Madagascar ?</h3>
+                        <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous travaillons avec des clients dans le monde entier ! Nous communiquons par email, WhatsApp, appels vidéo et autres plateformes numériques pour garantir une collaboration fluide, quel que soit votre emplacement.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item reveal-up" data-delay="400">
+                    <div class="faq-question">
+                        <h3>Quels formats de fichiers fournissez-vous pour les créations finales ?</h3>
+                        <span class="faq-toggle"><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous fournissons les créations finales dans plusieurs formats adaptés à l’usage numérique et à l’impression, notamment AI, PSD, PDF, JPG, PNG et SVG. Si vous avez besoin de formats spécifiques, indiquez-le simplement lors du briefing du projet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span>Pixentry Creatives</span>
+                    </div>
+                    <p>Services professionnels de design graphique et de documentation de Madagascar vers le monde entier.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="about.html">À propos de nous</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h3>Nos services</h3>
+                    <ul>
+                        <li><a href="services.html#graphic-design">Design graphique</a></li>
+                        <li><a href="services.html#document-services">Services de documentation</a></li>
+                        <li><a href="services.html#brand-identity">Identité de marque</a></li>
+                        <li><a href="services.html#advertising">Supports publicitaires</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contactez-nous</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-envelope"></i> contact@pixentrycreatives.com</li>
+                        <li><i class="fa-brands fa-whatsapp"></i> +261 32 42 022 42</li>
+                        <li><i class="fa-solid fa-location-dot"></i> Vohemar, Madagascar</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pixentry Creatives. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/261345678901" class="whatsapp-button" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Form Success Message (Hidden by default) -->
+    <div class="form-success-message" id="formSuccessMessage">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fa-solid fa-check-circle"></i>
+            </div>
+            <h3>Message envoyé avec succès !</h3>
+            <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
+            <button class="btn btn-primary close-success">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
