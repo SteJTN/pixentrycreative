@@ -1,0 +1,332 @@
+/* Main Styles - Pixentry Creatives */
+
+/* CSS Reset */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    /* Colors */
+    --color-primary: #6C63FF;
+    --color-primary-dark: #5A52D9;
+    --color-primary-light: #8B84FF;
+    --color-secondary: #2A2A2A;
+    --color-accent: #FF6584;
+    
+    --color-white: #FFFFFF;
+    --color-light: #F8F9FA;
+    --color-gray-100: #F1F3F5;
+    --color-gray-200: #E9ECEF;
+    --color-gray-300: #DEE2E6;
+    --color-gray-400: #CED4DA;
+    --color-gray-500: #ADB5BD;
+    --color-gray-600: #6C757D;
+    --color-gray-700: #495057;
+    --color-gray-800: #343A40;
+    --color-gray-900: #212529;
+    --color-dark: #121212;
+    
+    --color-success: #28A745;
+    --color-warning: #FFC107;
+    --color-error: #DC3545;
+    
+    /* Typography */
+    --font-primary: 'Open Sans', sans-serif;
+    --font-heading: 'Poppins', sans-serif;
+    
+    /* Spacing - 8px grid */
+    --space-1: 0.25rem; /* 4px */
+    --space-2: 0.5rem;  /* 8px */
+    --space-3: 1rem;    /* 16px */
+    --space-4: 1.5rem;  /* 24px */
+    --space-5: 2rem;    /* 32px */
+    --space-6: 2.5rem;  /* 40px */
+    --space-7: 3rem;    /* 48px */
+    --space-8: 4rem;    /* 64px */
+    
+    /* Borders */
+    --border-radius-sm: 0.25rem;
+    --border-radius: 0.5rem;
+    --border-radius-lg: 0.75rem;
+    --border-radius-xl: 1rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 6px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    
+    /* Transitions */
+    --transition: all 0.3s ease;
+    --transition-fast: all 0.2s ease;
+    --transition-slow: all 0.5s ease;
+    
+    /* Container */
+    --container-width: 1200px;
+    --header-height: 80px;
+}
+
+/* Base Styles */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-gray-800);
+    background-color: var(--color-white);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: var(--space-3);
+    color: var(--color-gray-900);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: var(--space-3);
+}
+
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-primary-dark);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin-bottom: var(--space-3);
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--space-4);
+}
+
+/* Section Padding */
+.section-padding {
+    padding: var(--space-8) 0;
+}
+
+.section-padding-sm {
+    padding: var(--space-5) 0;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--space-6);
+}
+
+.section-header h2 {
+    position: relative;
+    padding-bottom: var(--space-3);
+    margin-bottom: var(--space-2);
+}
+
+.section-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--color-primary);
+}
+
+.section-header p {
+    color: var(--color-gray-600);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Background Colors */
+.bg-light {
+    background-color: var(--color-gray-100);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.bg-dark {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+/* Text Utilities */
+.text-center {
+    text-align: center;
+}
+
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-white {
+    color: var(--color-white);
+}
+
+/* Margin Utilities */
+.mt-8 {
+    margin-top: var(--space-2);
+}
+
+.mt-16 {
+    margin-top: var(--space-3);
+}
+
+.mt-24 {
+    margin-top: var(--space-4);
+}
+
+.mt-32 {
+    margin-top: var(--space-5);
+}
+
+.mt-40 {
+    margin-top: var(--space-6);
+}
+
+.mb-8 {
+    margin-bottom: var(--space-2);
+}
+
+.mb-16 {
+    margin-bottom: var(--space-3);
+}
+
+.mb-24 {
+    margin-bottom: var(--space-4);
+}
+
+.mb-32 {
+    margin-bottom: var(--space-5);
+}
+
+/* Page Banner */
+.page-banner {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-7) 0;
+    text-align: center;
+}
+
+.page-banner h1 {
+    color: var(--color-white);
+    margin-bottom: var(--space-2);
+}
+
+.page-banner p {
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+    z-index: 999;
+    transition: var(--transition);
+}
+
+.whatsapp-button i {
+    font-size: 1.5rem;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Animation Utilities */
+.reveal-up, .reveal-left, .reveal-right {
+    opacity: 0;
+    transition: all 0.6s ease;
+    visibility: hidden;
+}
+
+.reveal-up.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.reveal-left.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.reveal-right.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.reveal-up {
+    transform: translateY(40px);
+}
+
+.reveal-left {
+    transform: translateX(-40px);
+}
+
+.reveal-right {
+    transform: translateX(40px);
+}
